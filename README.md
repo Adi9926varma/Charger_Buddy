@@ -56,5 +56,49 @@ This project follows the **MVC (Model–View–Controller)** design pattern:
 
 ---
 
+# ChargerBuddy ⚡🔋
+
+ChargerBuddy is a Java-based web application developed using **Struts Framework** and **Hibernate ORM**.  
+The project follows the **MVC architecture** and demonstrates enterprise-level Java web application development.
+
+This application is designed to manage user interactions, business logic, and database operations efficiently using modern Java frameworks.
+
+---
+
+## 🔥 Key Features
+
+- MVC-based architecture using Struts
+- Database persistence using Hibernate ORM
+- User authentication and validation
+- Clean separation of presentation, business logic, and data layer
+- Scalable and maintainable code structure
+- Server-side form handling and session management
+
+---
+
+## 🛠️ Tech Stack
+
+- **Programming Language:** Java (Advance Java)
+- **Frameworks:** Struts, Hibernate
+- **Frontend:** JSP, HTML, CSS
+- **Database:** MySQL
+- **Server:** Apache Tomcat
+- **IDE:** NetBeans / Eclipse
+- **Version Control:** Git & GitHub
+
+---
+
+## 🧱 Architecture
+
+This project follows the **MVC (Model–View–Controller)** design pattern:
+
+- **Model:** Hibernate (Entity classes & DAO)
+- **View:** JSP pages
+- **Controller:** Struts Actions
+
+---
+
 ## 📂 Project Structure
+
+
 
