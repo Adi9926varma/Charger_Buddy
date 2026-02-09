@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC"-OpenSymphony Group//XWork Validator 1.0.2//EN"
+"https://www.opensymphony.com/xeork/xwork-validator-1.0.2.dtd">
+
+<validators>
+    
+    <field name="cId">
+        <field-validator type="requiredstring">
+            <message>customer Id is Required</message>
+        </field-validator>
+        
+        <field-validator type="stringlength">
+            <param name="minLength">5</param>
+             <param name="maxLength">10</param>
+             <message>customer Id should be Atleast ${minLength} and ${maxLength} long</message>
+        </field-validator>
+    </field>
+    
+    <field name="password">
+        <field-validator type="requiredstring">
+            <message>Password is Required</message>
+        </field-validator>
+        
+        <field-validator type="stringlength">
+            <param name="minLength">5</param>
+             <param name="maxLength">10</param>
+             <message>Password should be Atleast ${minLength} and ${maxLength} long</message>
+        </field-validator>
+    </field>
+    
+    <field name="fullName">
+        <field-validator type="requiredstring">
+            <message>Fullname is Required</message>
+        </field-validator>
+        
+        <field-validator type="stringlength">
+            <param name="minLength">5</param>
+             <param name="maxLength">10</param>
+             <message>Fullname should be Atleast ${minLength} and ${maxLength} long</message>
+        </field-validator>
+    </field>
+</validators>

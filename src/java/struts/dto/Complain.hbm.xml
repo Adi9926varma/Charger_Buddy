@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="struts.dto">
+    <class name="Complain" table="Complain87">
+        <id name="complainId">
+<generator  class="native"/>
+          </id>
+        <property name="cId"/>
+        <property name="fullName"/>
+        <property name="contact"/>
+        <property name="complain"/>
+        </class>
+</hibernate-mapping>
+
+

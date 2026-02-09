@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <package name="technosoft" namespace="/" extends="struts-default">
+        <action name="loadhomepage">
+            <result>home.jsp</result>
+        </action>
+        
+        <action name="homeurl">
+            <result>home.jsp</result>
+        </action>
+        
+        <action name="productsurl">
+            <result>products.jsp</result>
+        </action>
+        
+        <action name="servicesurl">
+            <result>services.jsp</result>
+        </action>
+        
+        <action name="abouturl">
+            <result>about.jsp</result>
+        </action>
+        
+        <action name="contacturl">
+            <result>contact.jsp</result>
+        </action>
+        
+        <action name="loginurl">
+            <result>login.jsp</result>
+        </action>
+        
+        <action name="registerurl">
+            <result>register.jsp</result>
+        </action>
+        
+        <action name="query">
+            <result>query.jsp</result>
+        </action        >
+        
+        <action name="logouturl">
+            <result>home.jsp</result>
+        </action>
+        
+         <action name="requesturl">
+            <result>request.jsp</result>
+        </action>
+        
+        <action name="viewrequesturl">
+            <result>viewrequest.jsp</result>
+        </action>
+        
+         <action name="complainurl">
+            <result>complain.jsp</result>
+        </action>
+        
+        <action name="feedbackurl">
+            <result>feedback.jsp</result>
+        </action>
+        
+        <action name="agenturl">
+            <result>agentRegister.jsp</result>
+        </action>
+        
+        <action name="agentloginurl">
+            <result>agentlogin.jsp</result>
+        </action>
+
+
+        
+        <action name="registeraction_logicalcode_action"  class="struts.hibernate.action.CustomerAction">
+            <result name="input">login.jsp</result>
+            <result name="success">login.jsp</result>
+
+        </action>
+        
+         
+        <action name="loginaction_logicalcode_action"  class="struts.hibernate.action.LoginAction">
+            <result name="success">dashboard.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+        
+        <action name="customer_pwd_setting">
+            <result>customerpasswordpage.jsp</result>
+        </action> 
+        
+        <action name="customerpwddb"   class="struts.hibernate.action.LoginAction" method="pwdLogic">
+            <result  name="success">login.jsp</result>
+            <result  name="error">customerpasswordpage.jsp</result>
+        </action>
+        
+        <action name="requestdb"  class="struts.hibernate.action.RequestAction">
+            <result name="success">request.jsp</result>
+        </action>
+        
+        <action name="complaindb"  class="struts.hibernate.action.ComplainAction">
+            <result name="success">complain.jsp</result>
+        </action>
+        
+        
+        <action name="feedbackdb"  class="struts.hibernate.action.FeedbackAction">
+            <result name="success">feedback.jsp</result>
+        </action>
+        
+         <action name="agentregisteraction_logicalcode_action"  class="struts.hibernate.action.AgentAction">
+            <result name="success">agentlogin.jsp</result>
+        </action>
+        
+        <action name="agentloginaction_logicalcode_action"  class="struts.hibernate.action.AgentLoginAction">
+            <result name="success">agentdashboard.jsp</result>
+            <result name="error">agentlogin.jsp</result>
+        </action>
+        
+        
+               <!--ADMIN SECTION-->
+               
+               
+        <action name="adminlink">
+            <result>admin.jsp</result>
+        </action>
+        
+        <action name="logouturl">
+            <result>admin.jsp</result>
+        </action>
+              
+        
+         <action name="adminlogindb"  class="struts.hibernate.action.AdminLoginAction">
+            <result name="success">admindashboard.jsp</result>
+            <result name="error">admin.jsp</result>
+        </action>    
+        
+          <action name="admin_pwd_setting">
+            <result>adminpasswordpage.jsp</result>
+        </action> 
+        
+        <action name="adminpwddb"   class="struts.hibernate.action.AdminLoginAction" method="pwdLogic">
+            <result  name="success">admin.jsp</result>
+            <result  name="error">adminpasswordpage.jsp</result>
+        </action>
+        
+    </package>
+</struts>
+
+
